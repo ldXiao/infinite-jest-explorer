@@ -1,0 +1,7 @@
+build/
+*.epub
+__pycache__/
+# runtime assets fetched by scripts/fetch_assets.sh
+site/model.part*.wasm
+site/ort.wasm.min.js
+site/ort-wasm-simd-threaded.*
