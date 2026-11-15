@@ -26,6 +26,16 @@ cd site && python3 -m http.server 8000
 ```
 Open http://localhost:8000. Keyword search works without the assets.
 
+## Deploying to GitHub Pages
+
+Before the first deployment, a repository administrator must open **Settings → Pages**
+and select **GitHub Actions** under **Build and deployment → Source**. Otherwise
+`configure-pages` fails because the Pages site is not configured.
+
+The **Deploy to GitHub Pages** workflow runs on pushes to `main` and can also be
+started from the Actions tab. After configuring Pages, rerun the failed workflow or
+run it manually.
+
 ## Rebuilding
 
 Needs Python with `numpy onnxruntime tokenizers`, and your own copy of the ePub.
